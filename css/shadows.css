@@ -1,0 +1,33 @@
+.fixedWidth{
+    background:#cbf;
+    width:100px;
+    float:left;
+    /* border-style:solid;
+    border-width:2px;
+    border-color:gold; */
+   border:solid 2px gold;
+   /* padding-left:10px;
+   padding-right:15px;
+   padding-top:10px;
+   padding-bottom:10px; */
+   /* padding:10px 15px 10px 10px;
+   padding: 1px 20px;
+   padding: 1px 3px 15px; */
+   padding:10px;
+   /* box-sizing:border-box; */
+   opacity:0.5;
+}
+.fixedWidth:hover{
+    opacity:1;
+}
+
+.fluidWidth{
+    background:#ffbbee;
+  width:100px;
+   float:left;
+    box-shadow:-3px 3px 20px olive, 3px -3px 3px tomato;
+    text-shadow:1px 1px 9px tomato;
+}
+h2{
+    clear:both;
+}

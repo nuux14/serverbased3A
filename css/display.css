@@ -1,0 +1,20 @@
+span{
+    background:gold;
+    padding-top:10px;
+    padding-bottom:20px;
+    width:50px;
+    display:inline-block;
+}
+p.pbl{
+    background:olive;
+    width:60px;
+    height:150px;
+    padding:10px;
+    margin:10px;
+    border-width:10px;
+    border-style:solid;    
+}
+div.dflex{
+  display:flex;
+  /* read flexbox css grid */
+}

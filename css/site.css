@@ -1,0 +1,54 @@
+*{
+    color:white;
+}
+
+body{
+    background-color:tomato;
+}
+h2{
+    color:black;
+}
+
+h2.abc{
+    color:blue;
+    background-color:white;
+}
+/* class selector    */
+.abc{
+    background-color:yellow;
+}
+
+/* Child selector   */
+.promo>h2{
+    font-size:30px;
+}
+/*  Descendent selector */
+.promo h2{
+    border-style:solid;
+    border-width:1px;    
+}
+/* the first sibling of the specified selector  */
+.promo h2.first~p{
+    border-color:white;
+    border-width:6px;
+    border-style:solid;
+}
+
+/* Grouped selectors   */
+h1,h2,h3{
+    color: white;
+}
+
+/* Pseudo selectors   */
+h2:first-child{
+    background-color:orange;
+}
+
+h2:last-child{
+    background-color:green;
+}
+h2:nth-child(1){
+    background-color:olivedrab;
+}
+
+

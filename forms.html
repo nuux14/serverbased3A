@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms </title>
+    <style>
+      /* p {
+         color:red; 
+      } */
+      #txtName{
+          color:green;
+      }
+      .myClass{
+        color:blue;  
+      }
+
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Contact Us</legend>
+        <p> <label class="myClass" for="txtName">Name:</label>
+            <input type="text" id="txtName"></p>
+        <p> <label class="myClass" for="txtEmail">Email:</label>
+            <input type="email" id="txtEmail"></p>
+            <p><input type="number" ></p>
+        <p>
+            <textarea class="myClass" rows=10 cols=22 id="txtContent"></textarea>
+        </p>
+        <p>
+            <button style="color:green;font-size:18px;" id="btnSave">Submit</button>
+        </p>
+    </fieldset>
+</body>
+
+</html>

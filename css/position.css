@@ -1,0 +1,22 @@
+.banner{
+    width:100vw;
+    background:rgba(0,0,0,0.1);
+    text-align:center;
+    padding:15px;
+}
+body{
+    margin:0;
+    position:relative;
+}
+ul{
+    background:rgba(250,50,0,0.1);
+    margin:0;
+    position:sticky;
+    top:0;
+}
+
+ul>li{
+list-style-type: none;
+display:inline-block;
+padding:10px;
+}
