@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/faq.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+    <ol id="faqList">
+        <li>About UoH
+            <div>University of Hargeisa Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorum, facilis amet aperiam enim consequatur. Consectetur ducimus in architecto natus itaque possimus et corrupti laborum incidunt adipisci eum reiciendis culpa assumenda quia, odit quidem vel ea similique quaerat dignissimos rerum est deserunt, fugiat ad! Itaque blanditiis iusto molestias sapiente neque impedit veniam in voluptate accusamus?</div>
+        </li>
+        <li>How can I join the University
+            <div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi consequatur laborum vitae odit! Sit optio dolores quaerat amet facilis aperiam. Debitis ullam aliquid assumenda nam.
+            </div>
+        </li>
+        <li>
+            How much is the cost of a semester
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum impedit nobis ea repellendus explicabo quo, dicta, iure, veritatis temporibus mollitia aliquam adipisci? Minus, quos saepe.</div>
+        </li>
+        <li>
+            Is there a dormitory for students
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi reiciendis est aut in ut vel ullam distinctio non delectus sequi, voluptatum, consectetur quaerat aliquid similique!</div>
+        </li>
+    </ol>
+    <label for="txt" id="fortxt">Name:
+    <input type="text" id="txt"></label>
+
+    <script>
+    //    $(document).ready();
+    $("#faqList>li").click(function(){
+        // $(this).children('div').slideToggle();
+        $(this).find('div').slideToggle();
+    });
+
+    //jQuery HTML
+    $('#txt').focus(function(){
+        $(this).css({"padding":"10px"});
+       // alert($(this).val());
+       // alert($('#fortxt').html());// .attr('id') .html()
+        // .addClass('myclass')
+        $(this).toggleClass('myclass');
+    });
+    </script>
+</body>
+</html>

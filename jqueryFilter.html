@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jqueryFilter.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Filtering Data</h2>
+    <label for="search">Search: 
+        <input type="text" id="search">
+    </label>
+
+    <table id="tbl" border>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Gedi</td>
+            <td>Male</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Hinda</td>
+            <td>Female</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Yusuf</td>
+            <td>Male</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Ismail</td>
+            <td>Male</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+    <script>
+      $(document).ready(
+        $("#search").keyup(function(){
+            var value=$(this).val().toLowerCase();
+            $('tr').filter(function(){
+                $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1);
+            });
+        })
+      );
+    </script>
+</body>
+</html>

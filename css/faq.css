@@ -1,0 +1,20 @@
+ol li:nth-child(odd){
+    background-color:#eee;
+}
+ol li:nth-child(even){
+    background-color:#ccc;
+}
+ol li>div{
+    background-color:rgb(233, 223, 223);
+    display:none;
+}
+ol>li{
+    padding:10px;    
+}
+ol>li:hover{
+   cursor:pointer;
+}
+
+.myclass{
+    box-shadow:2px 3px 10px blue;
+}
