@@ -1,7 +1,18 @@
 #tbl tr:nth-child(even){
-   background-color:#ccc; 
+   background-color:#ccc;
+    border-style:solid;
 }
 #tbl{
     width:80%;
-    margin-top:25px;
+    margin-top:25px;   
+    border-collapse: collapse;
+    border-width:3px;  
+    /* border-spacing: 150px; */
+  
+}
+
+#tbl tr td, th,tr{
+    text-align: left;
+    border:0px solid brown;
+   
 }

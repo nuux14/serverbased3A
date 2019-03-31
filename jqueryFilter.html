@@ -14,7 +14,7 @@
         <input type="text" id="search">
     </label>
 
-    <table id="tbl" border>
+    <table id="tbl">
         <tr>
             <th>Name</th>
             <th>Gender</th>
@@ -47,10 +47,13 @@
         $("#search").keyup(function(){
             var value=$(this).val().toLowerCase();
             $('tr').filter(function(){
-                $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1);
+                $(this).toggle($(this).children('td:nth-child(1)').text().toLowerCase().indexOf(value)>-1);
             });
         })
       );
     </script>
+    <footer>
+        Copyright &copy; <script>document.write(new Date().getFullYear());</script>. UoH Allrights Reserved !
+    </footer>
 </body>
 </html>
